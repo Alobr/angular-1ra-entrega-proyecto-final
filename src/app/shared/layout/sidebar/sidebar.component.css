@@ -1,0 +1,36 @@
+aside {
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.margin {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+
+.d-flex a {
+  font-size: 17px;
+  font-weight: bolder;
+  padding: 10px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  color: rgb(109, 66, 186);
+}
+
+.d-flex a:hover {
+  color: black;
+}
+
+
+.icon {
+  margin-right: 5px;
+}
+
+.selected {
+  background-color: rgba(0, 0, 0, 0.109);
+  border-radius: 20%;
+}

@@ -1,0 +1,11 @@
+main {
+  min-height: calc(100vh - 200px);
+}
+
+.table-font {
+  font-size: 25px;
+}
+
+.table-font-2 {
+  font-size: 20px;
+}
