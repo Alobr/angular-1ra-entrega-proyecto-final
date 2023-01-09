@@ -22,7 +22,7 @@ export class StudentsPageComponent {
     new Student(9, 'Martin', 'Zabala', 3),
   ];
 
-  displayedColumns = ['id', 'firstName', 'lastName', 'isTopTen', 'edit', 'delete'];
+  displayedColumns = ['id', 'firstName', 'lastName', 'score', 'edit', 'delete'];
 
   constructor(private readonly dialogService: MatDialog) { }
 

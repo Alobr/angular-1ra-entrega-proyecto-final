@@ -1,26 +1,26 @@
 <main>
-  <button (click)="addStudent()" class="mb-3" mat-flat-button color="primary">Agregar alumno</button>
-  <table mat-table [dataSource]="students">
+  <button (click)="addClass()" class="mb-3" mat-flat-button color="primary">Agregar Clase</button>
+  <table mat-table [dataSource]="classes">
     <ng-container matColumnDef="id">
       <th mat-header-cell *matHeaderCellDef class="table-font">No.</th>
       <td mat-cell *matCellDef="let element" class="table-font-2"> {{element.id}}</td>
     </ng-container>
-    <ng-container matColumnDef="firstName">
+    <ng-container matColumnDef="className">
       <th mat-header-cell *matHeaderCellDef class="table-font">Nombre</th>
-      <td mat-cell *matCellDef="let element" class="table-font-2"> {{element.firstName}}</td>
+      <td mat-cell *matCellDef="let element" class="table-font-2"> {{element.className}}</td>
     </ng-container>
-    <ng-container matColumnDef="lastName">
-      <th mat-header-cell *matHeaderCellDef class="table-font">Apellido</th>
-      <td mat-cell *matCellDef="let element" class="table-font-2"> {{element.lastName}}</td>
+    <ng-container matColumnDef="day">
+      <th mat-header-cell *matHeaderCellDef class="table-font">Día</th>
+      <td mat-cell *matCellDef="let element" class="table-font-2"> {{element.day}}</td>
     </ng-container>
-    <ng-container matColumnDef="score">
-      <th mat-header-cell *matHeaderCellDef class="table-font">Calificación</th>
-      <td mat-cell *matCellDef="let element" class="table-font-2"> {{element.score}}</td>
+    <ng-container matColumnDef="schedule">
+      <th mat-header-cell *matHeaderCellDef class="table-font">Horario</th>
+      <td mat-cell *matCellDef="let element" class="table-font-2"> {{element.schedule}}</td>
     </ng-container>
     <ng-container matColumnDef="edit">
       <th mat-header-cell *matHeaderCellDef class="table-font">Editar</th>
       <td mat-cell *matCellDef="let element">
-        <button (click)="editStudent(element)" mat-icon-button color="primary">
+        <button (click)="editClass(element)" mat-icon-button color="primary">
           <mat-icon>edit_note</mat-icon>
         </button>
       </td>
@@ -28,7 +28,7 @@
     <ng-container matColumnDef="delete">
       <th mat-header-cell *matHeaderCellDef class="table-font">Eliminar</th>
       <td mat-cell *matCellDef="let element">
-        <button (click)="deleteStudent(element)" mat-icon-button color="warn">
+        <button (click)="deleteClass(element)" mat-icon-button color="warn">
           <mat-icon>delete</mat-icon>
         </button>
       </td>

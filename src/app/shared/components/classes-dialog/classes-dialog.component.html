@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>Agregar Clase</h1>
+<div mat-dialog-content>
+  <form class="d-flex flex-column mb-2" [formGroup]="classForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre</mat-label>
+      <input [formControl]="classNameControl" matInput placeholder="Nombre">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Día</mat-label>
+      <input [formControl]="dayControl" matInput placeholder="Dia">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Horario</mat-label>
+      <input [formControl]="scheduleControl" matInput placeholder="Horario">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="close()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="classForm.value" cdkFocusInitial>Guardar</button>
+</div>
